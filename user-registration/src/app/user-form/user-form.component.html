@@ -1,0 +1,38 @@
+<form>
+    <input type="hidden" name="userId"
+    [value]="service.formData.userId" />
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label>Name</label>
+            <input class="form-control form-control-lg" placeholder="First Name"
+                name="name" #name="ngModel" [(ngModel)]="service.formData.name">
+        </div>
+        <div class="form-group col-md-6">
+            <label>Surname</label>
+            <input class="form-control form-control-lg" placeholder="Last Name"
+                name="surname" #surname="ngModel" [(ngModel)]="service.formData.surname">
+        </div>
+    </div>
+    <div class="form-group col-md-5">
+        <label>Birth Date</label>
+        <input class="form-control form-control-lg" placeholder="Birth Date"
+        name="birthDate" #birthDate="ngModel" [(ngModel)]="service.formData.birthDate">
+    </div>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label>E-Mail</label>
+            <input type="email" class="form-control form-control-lg" placeholder="E-Mail"
+            name="email" #email="ngModel" [(ngModel)]="service.formData.email">
+        </div>
+        <div class="form-group col-md-6">
+            <label>Phone Number</label>
+            <input type="tel" class="form-control form-control-lg" placeholder="Phone Number"
+            name="phone" #phone="ngModel" [(ngModel)]="service.formData.phone">
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Password</label>
+        <input type="password" class="form-control form-control-lg" placeholder="Password"
+        name="password" #password="ngModel" [(ngModel)]="service.formData.password">
+    </div>
+</form>
